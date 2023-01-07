@@ -1,7 +1,5 @@
 import React from 'react';
-
-import { Row, Col, Icon, Menu, Button, Popover } from 'antd';
-
+import { Row, Col, Icon, Menu, Button, Popover,Affix } from 'antd';
 import { enquireScreen } from 'enquire-js';
 
 const LOGO_URL = 'dist/logo.png';
@@ -10,7 +8,7 @@ class Header extends React.Component {
   state = {
     menuVisible: false,
     menuMode: 'horizontal',
-  
+    hendergsh:'header'
   };
 
   componentDidMount() {
@@ -18,12 +16,19 @@ class Header extends React.Component {
       this.setState({ menuMode: b ? 'inline' : 'horizontal' });
     });
   }
-
+  //修改导航栏状态
+   henderg(err){
+    this.setState({
+      hendergsh: err? 'header borderShow':'header'
+    },()=>{
+     // console.log(this.state.hendergsh)
+    })
+    }
   render() {
 
-    const { menuMode, menuVisible } = this.state;
+    const {menuMode} = this.state;
     const menu = (
-      <Menu mode='horizontal' id="nav" key="nav">
+      <Menu mode='horizontal' id="nav" key="nav" style={{background:'#fff0'}}>
         {
           menuMode === 'horizontal' && (
             <Menu.Item key="home">
@@ -50,8 +55,8 @@ class Header extends React.Component {
     );
 
     return (
-
-      <div id="header" className="header">
+    <Affix onChange={affixed => this.henderg(affixed)}>
+      <div id="header" className={this.state.hendergsh}>
         <Row>
           <Col xxl={4} xl={5} lg={5} md={5} sm={5} xs={5}>
             <div id="logo" to="/">
@@ -71,11 +76,13 @@ class Header extends React.Component {
                   QQ频道
                 </Button>
               </a></div> : null}
+              
               <div id="menu">{menu}</div>
             </div>
           </Col>
         </Row>
       </div>
+      </Affix>
     );
   }
 }

@@ -1,9 +1,13 @@
 import React from 'react';
-import { Row, Col, Button } from 'antd';
+import { Row, Col, Button,BackTop } from 'antd';
 
 function Footer() {
   return (
     <footer id="footer" className="dark">
+      <div>
+    <BackTop />
+    <strong style={{ color: 'rgba(64, 64, 64, 0.6)' }}> </strong>
+  </div>
     {/*   <div className="footer-wrap">
         <Row>
           <Col lg={6} sm={24} xs={24}>

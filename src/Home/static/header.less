@@ -1,12 +1,27 @@
 @import './default.less';
 @import "~antd/lib/style/mixins/clearfix.less";
 @header-height: 80px;
-
+.Toplod{
+  width: 100%;
+  position: fixed;
+  top: -11px;
+  z-index: 999;
+}
+.ant-progress-bg{
+  border-radius:0
+}
+.header.borderShow{
+  border-color:fade(rgb(192,192,192),42%) !important; 
+}
 #header {
-  background-color: #fff;
+  transition: all 0.36s;
+  background:fade(#fff,72%);
+  backdrop-filter: saturate(180%) blur(20px);
   position: relative;
   z-index: 10;
   height: 64px;
+  border-bottom:1px solid;
+  border-color:fade(rgb(192,192,192),0%); 
 }
 
 #logo {
