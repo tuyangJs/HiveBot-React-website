@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { Row, Col, Icon, Menu, Button, Popover,Affix } from 'antd';
+
 import { enquireScreen } from 'enquire-js';
 
 const LOGO_URL = 'dist/logo.png';

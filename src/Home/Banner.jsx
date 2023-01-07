@@ -8,6 +8,10 @@ import { Button } from 'antd';
 import BannerSVGAnim from './component/BannerSVGAnim';
 
 function Banner(props) {
+  function clickGoods(e) {
+    // 在此函数中传入值
+    props.dowPrice(e);
+  }
   return (
     <div className="banner-wrapper">
       {props.isMobile && (
@@ -38,11 +42,11 @@ function Banner(props) {
               开发文档
             </Button>
           </a>
-         
-          <Button  style={{ margin: '0 16px' }} type="primary" ghost>
+
+          <Button onClick={clickGoods.bind(this,true)} style={{ margin: '0 16px' }} type="primary" ghost>
             开始使用
           </Button>
-        {/*   <GitHubButton
+          {/*   <GitHubButton
             key="github-button"
             type="stargazers"
             namespace="ant-design"

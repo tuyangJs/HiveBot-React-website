@@ -3,7 +3,11 @@ import { OverPack } from 'rc-scroll-anim';
 import QueueAnim from 'rc-queue-anim';
 import { Button,Tooltip} from 'antd';
 
-function Page2() {
+function Page2(props) {
+  function clickGoods(e) {
+    // 在此函数中传入值
+    props.dowPrice(e);
+  }
   return (
     <div className="home-page page2">
       <div className="home-page-wrapper">
@@ -39,9 +43,7 @@ function Page2() {
             </p>
             <div key="button" style={{ marginTop: 88 }}>
             <Tooltip title="默认下载Winx64i">
-              <a href="" target="_blank" rel="noopener noreferrer">
-                <Button type="primary">下载Hive Bot</Button>
-              </a>
+                <Button onClick={clickGoods.bind(this,true)} type="primary">下载Hive Bot</Button>
              </Tooltip>
             </div>
           </QueueAnim>
