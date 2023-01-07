@@ -16,8 +16,8 @@ const featuresCN = [
     shadowColor: 'rgba(19,194,194,.12)',
   },
   {
-    title: '应用设计模式',
-    content: '使用JavaScript便可以快速开发属于自己的应用，当然使用nodejs也可以让应用功能更加丰富。',
+    title: '应用模式',
+    content: '转为前端程序员设计，使用JavaScript&Nodejs便可以快速开发属于自己的应用',
     src: 'https://gw.alipayobjects.com/zos/rmsportal/smwQOoxCjXVbNAKMqvWk.svg',
     color: '#2F54EB',
     shadowColor: 'rgba(47,84,235,.12)',

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Tooltip } from 'antd';
 import PropTypes from 'prop-types';
 import GitHubButton from 'react-github-button';
 import QueueAnim from 'rc-queue-anim';
@@ -29,7 +30,7 @@ function Banner(props) {
         </div>
         <h1 key="h1">蜂巢机器人服务平台</h1>
         <p key="content">
-          开箱即用机器人解决方案框架平台<p>一旦你熟悉它后，能够为你节约大量时间，即写即用、不中断，让你可以更加专注、方便地开发。</p>
+          开箱即用机器人解决方案框架平台<p>一旦你熟悉它后，能够为你节约大量时间<p>即写即用、不中断，让你可以更加专注、方便地开发。</p></p>
         </p>
         <div key="button" className="button-wrapper">
           <a href="https://cy9129qwc8.feishu.cn/wiki/wikcnE0nKvC3erDKAK3GztjIxjh" target="_blank" rel="noopener noreferrer">
@@ -37,7 +38,8 @@ function Banner(props) {
               开发文档
             </Button>
           </a>
-          <Button style={{ margin: '0 16px' }} type="primary" ghost>
+         
+          <Button  style={{ margin: '0 16px' }} type="primary" ghost>
             开始使用
           </Button>
         {/*   <GitHubButton

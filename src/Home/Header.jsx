@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Row, Col, Icon, Menu, Button, Popover } from 'antd';
 
 import { enquireScreen } from 'enquire-js';
@@ -9,6 +10,7 @@ class Header extends React.Component {
   state = {
     menuVisible: false,
     menuMode: 'horizontal',
+  
   };
 
   componentDidMount() {
@@ -18,8 +20,8 @@ class Header extends React.Component {
   }
 
   render() {
-    const { menuMode, menuVisible } = this.state;
 
+    const { menuMode, menuVisible } = this.state;
     const menu = (
       <Menu mode='horizontal' id="nav" key="nav">
         {
@@ -57,7 +59,7 @@ class Header extends React.Component {
               <span>Hive Bot</span>
             </div>
           </Col>
-          <Col offset={0} xxl={22} xl={20} lg={19} md={18} sm={17} xs={17}>
+          <Col offset={0} xxl={19} xl={18} lg={18} md={17} sm={17} xs={17}>
             <div className="header-meta">
               {menuMode === 'horizontal' ? <div id="preview"><a
                 id="preview-button"

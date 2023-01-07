@@ -18,11 +18,11 @@ function Page2() {
             </p>
             <div key="code1" className="home-code">
               <div>
-              <span>在线安装程序</span> http://v.hiveai.cc/newv/mysetup.exe  <span className="home-code-comment">
+              <span>在线安装程序</span> http://v.hiveai.cc/newv/Hivebot.exe <span className="home-code-comment">
                   // 秒下载
                 </span>
               </div>
-              <div> <span>离线包下载</span> http://v.hiveai.cc/newv/Hivebot.exe</div>
+              <div> <span>离线包下载</span> http://v.hiveai.cc/newv/mysetup.exe</div>
               <div>
                 蜂巢版本Api
                 <span className="home-code-comment">
@@ -38,9 +38,11 @@ function Page2() {
               <a href="https://pd.qq.com/s/9dcy6kjpl" target="_blank"> 进行提问 </a>。
             </p>
             <div key="button" style={{ marginTop: 88 }}>
+            <Tooltip title="默认下载Winx64i">
               <a href="" target="_blank" rel="noopener noreferrer">
                 <Button type="primary">下载Hive Bot</Button>
               </a>
+             </Tooltip>
             </div>
           </QueueAnim>
         </OverPack>
