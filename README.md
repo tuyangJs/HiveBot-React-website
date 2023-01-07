@@ -21,3 +21,7 @@ $ npm i
 ```
 $ npm start
 ```
+## 生成HTML
+```
+$ npm run build
+```
