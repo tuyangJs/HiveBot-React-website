@@ -8,11 +8,13 @@ import { Button } from 'antd';
 import BannerSVGAnim from './component/BannerSVGAnim';
 
 function Banner(props) {
+  const load = window.Hivelocale.messages
   function clickGoods(e) {
     // 在此函数中传入值
     props.dowPrice(e);
   }
   return (
+    
     <div className="banner-wrapper">
       {props.isMobile && (
         <TweenOne animation={{ opacity: 1 }} className="banner-image-wrapper">
@@ -32,19 +34,19 @@ function Banner(props) {
             style={{ transform: 'translateX(-64px)' }}
           />
         </div>
-        <h1 key="h1">蜂巢机器人服务平台</h1>
+        <h1 key="h1">{load['Banner.h1']}</h1>
         <p key="content">
-          开箱即用机器人解决方案框架平台<p>一旦你熟悉它后，能够为你节约大量时间<p>即写即用、不中断，让你可以更加专注、方便地开发。</p></p>
+         {load['Banner.p'][0]}<p> {load['Banner.p'][1]}<p> {load['Banner.p'][2]}</p></p>
         </p>
         <div key="button" className="button-wrapper">
           <a href="https://cy9129qwc8.feishu.cn/wiki/wikcnE0nKvC3erDKAK3GztjIxjh" target="_blank" rel="noopener noreferrer">
             <Button type="primary">
-              开发文档
+            {load['Banner.button'][0]}
             </Button>
           </a>
 
           <Button onClick={clickGoods.bind(this,true)} style={{ margin: '0 16px' }} type="primary" ghost>
-            开始使用
+          {load['Banner.button'][1]}
           </Button>
           {/*   <GitHubButton
             key="github-button"

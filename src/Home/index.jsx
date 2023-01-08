@@ -2,7 +2,6 @@ import React from 'react';
 import DocumentTitle from 'react-document-title';
 import { enquireScreen } from 'enquire-js';
 import { message } from 'antd';
-//import Toplod from './Toplod';
 import Header from './Header';
 import Banner from './Banner';
 import Page1 from './Page1';
@@ -14,12 +13,15 @@ let isMobile;
 
 enquireScreen((b) => {
   isMobile = b;
-});
+})
+if(navigator.language != localStorage.getItem('locales')){
+  message.warning('检测到您的电脑是中文，如需切换到中文，请在页尾选择语言按钮！',8)}
 class Home extends React.PureComponent {
   state = {
     isMobile,
     loaval: 0,
-    winix: 'http://v.hiveai.cc/newv/Hivebot.exe'
+    winix: 'https://v.hiveai.cc/newv/Hivebot.exe',
+    laddata:window.Hivelocale.locale
   }
   componentDidMount() {
     enquireScreen((b) => {
@@ -38,18 +40,28 @@ class Home extends React.PureComponent {
     link.click()
     message.success('启动成功！请在下载列表找到 Hivebot.exe 启动',5)
   }
+  loacTeab(name){
+    localStorage.setItem('locales',name)
+    let eer=window.TabHivelad()
+    if(eer){
+      window.location.reload()
+    }else{
+      message.error('语言切换失败！我们可能没有找到您选择的语言！',5)
+    }
+  }
   render() {
     return (
-      <DocumentTitle title="【预览】蜂巢 - bot服务平台 机器人框架方案平台">
+      <DocumentTitle title={Hivelocale.messages.HiveWebName}>
+      
         <div>
           {/*   <Toplod isMobile={this.state.loaval}/> */}
-          <Header isMobile={this.state.isMobile} />
+          <Header isMobile={this.state.isMobile}/>
           <div className="home-wrapper">
             <Banner isMobile={this.state.isMobile} dowPrice={this.download.bind(this)} />
             <Page1 isMobile={this.state.isMobile} />
             <Page2 dowPrice={this.download.bind(this)} />
           </div>
-          <Footer />
+          <Footer loacTeab={this.loacTeab.bind(this)} />
         </div>
       </DocumentTitle>
     );

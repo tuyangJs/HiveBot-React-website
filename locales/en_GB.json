@@ -1,0 +1,81 @@
+{
+    "localesName": "English",
+    "HiveWebName":"[Preview] Hive - bot Service Platform Robot Framework Solution Platform",
+    "hiveName": [
+        "Hive",
+        "HiveBot"
+    ],
+    "Header.menu": [
+        "Home",
+        "Forum",
+        "Doc"
+    ],
+    "Banner.h1": "Hive Robotics Service Platform",
+    "Banner.p": [
+        "Out-of-the-box robotics solution framework platform",
+        "Once you are familiar with it, it can save you a lot of time",
+        "Write-and-use and no interruptions allow you to develop with more focus and ease."
+    ],
+    "Banner.button": [
+        "Dev Doc",
+        "Get Started"
+    ],
+    "Page1.box1": [
+        "Elegantly beautiful",
+        "Well designed based on bootstrap5 system"
+    ],
+    "Page1.box2": [
+        "App Mode",
+        "Designed for front-end programmers, you can quickly develop your own applications using JavaScript & Nodejs."
+    ],
+    "Page1.box3": [
+        "Latest Technology Stack",
+        "Develop with cutting-edge front-end technologies such as Electron & Chromium 108"
+    ],
+    "Page1.box4": [
+        "Responsive layout",
+        "Designed for different screen sizes, free to stretch the window size"
+    ],
+    "Page1.box5": [
+        "Elegant theme",
+        "With light and dark theme switching function"
+    ],
+    "Page1.box6": [
+        "Standardized Api",
+        "Internal Api and parameter names are unified to reduce your code"
+    ],
+    "Page1.box7": [
+        "Best Practice",
+        "The community continues to release open source applications for your reference"
+    ],
+    "Page1.box8": [
+        "Security Data",
+        "Asymmetric encryption of data using RSA plus UUID binding computer"
+    ],
+    "Page1.box9": [
+        "Free Permission",
+        "Unlike other products where permissions can only be viewed but not switched, Hive can freely switch the permissions of each application."
+    ],
+    "Page1.h1": "Why Use",
+    "Page2.h1": [
+        "Get",
+        "HiveBot"
+    ],
+    "Page2.p": "Different installation services are available using the following link",
+    "Page2.span1": "Online Installer",
+    "Page2.span2": "// Quick Download",
+    "Page2.span3": "Offline Package Download",
+    "Page2.span4": "Hive Version Api",
+    "Page2.span5": "// Open browser Get",
+    "Page2.pa": [
+        "Need help? Please read first",
+        "Dev doc",
+        " or to the community",
+        "Find similar problems",
+        ",If not solved, you can go to our QQ channel",
+        "Ask a question",
+        "."
+    ],
+    "Page2.button": "Download HiveBot",
+    "Page2.buttonT":"Online Installer"
+}

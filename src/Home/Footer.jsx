@@ -1,14 +1,25 @@
 import React from 'react';
-import { Row, Col, Button,BackTop } from 'antd';
+import { Row, Menu,Dropdown, Col, Button, BackTop } from 'antd';
 
-function Footer() {
+function Footer(ort) {
+ 
+   const menu = (
+    <Menu>
+      <Menu.Item>
+        <a onClick={ort.loacTeab.bind(this,'zh-CN')}>简体中文</a>
+      </Menu.Item>
+      <Menu.Item>
+        <a onClick={ort.loacTeab.bind(this,'en-GB')}>English</a>
+      </Menu.Item>
+    </Menu>
+  )
   return (
     <footer id="footer" className="dark">
       <div>
-    <BackTop />
-    <strong style={{ color: 'rgba(64, 64, 64, 0.6)' }}> </strong>
-  </div>
-    {/*   <div className="footer-wrap">
+        <BackTop />
+        <strong style={{ color: 'rgba(64, 64, 64, 0.6)' }}> </strong>
+      </div>
+      {/*   <div className="footer-wrap">
         <Row>
           <Col lg={6} sm={24} xs={24}>
             <div className="footer-center">
@@ -135,13 +146,16 @@ function Footer() {
       <Row className="bottom-bar">
         <Col lg={6} sm={24}>
           <div className="translate-button">
+            <Dropdown overlay={menu} placement="topCenter">
             <Button ghost size="small" >
-              简体中文
+              {window.Hivelocale.messages.localesName}
             </Button>
+            </Dropdown>
+           
           </div>
         </Col>
         <Col lg={18} sm={24}>
-        {/*   <span
+          {/*   <span
             style={{
               lineHeight: '16px',
               paddingRight: 12,
@@ -169,7 +183,7 @@ function Footer() {
           <span style={{ marginRight: 12 }}>蜀ICP备2022000695号-1</span>
         </Col>
         <span style={{ marginRight: 12 }}>Copyright © HiveBot</span>
-       
+
       </Row>
     </footer>
   );

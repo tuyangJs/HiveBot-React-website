@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Row, Col, Icon, Menu, Button, Popover,Affix } from 'antd';
+import { Row, Col, Icon, Menu, Button,Affix } from 'antd';
 
 import { enquireScreen } from 'enquire-js';
 
@@ -10,7 +10,8 @@ class Header extends React.Component {
   state = {
     menuVisible: false,
     menuMode: 'horizontal',
-    hendergsh:'header'
+    hendergsh:'header',
+    loca:this.props.lostab
   };
 
   componentDidMount() {
@@ -27,22 +28,22 @@ class Header extends React.Component {
     })
     }
   render() {
-
+    const hedloca = Hivelocale.messages['Header.menu']
     const {menuMode} = this.state;
     const menu = (
       <Menu mode='horizontal' id="nav" key="nav" style={{background:'#fff0'}}>
         {
           menuMode === 'horizontal' && (
             <Menu.Item key="home">
-              <a>首页</a>
+              <a>{hedloca[0]}</a>
             </Menu.Item>
           )
         }
         <Menu.Item key="docs">
-          <a target="_blank" href="https://com.hiveai.cc/" rel="noopener noreferrer"><span>社区</span></a>
+          <a target="_blank" href="https://com.hiveai.cc/" rel="noopener noreferrer"><span>{hedloca[1]}</span></a>
         </Menu.Item>
         <Menu.Item key="components">
-          <a target="_blank" href="https://cy9129qwc8.feishu.cn/wiki/wikcno5gFUvNzKBE4gvRo12HOJc" rel="noopener noreferrer">文档</a>
+          <a target="_blank" href="https://cy9129qwc8.feishu.cn/wiki/wikcno5gFUvNzKBE4gvRo12HOJc" rel="noopener noreferrer">{hedloca[2]}</a>
         </Menu.Item>
         {
           menuMode === 'inline' && (

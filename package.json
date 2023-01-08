@@ -1,7 +1,8 @@
 {
   "private": true,
   "entry": {
-    "index": "./index.js"
+    "index": "./index.js",
+    "locales":"./locales/index.js"
   },
   "dependencies": {
     "antd": "^2.13.10",

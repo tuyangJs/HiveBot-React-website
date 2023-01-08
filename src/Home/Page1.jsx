@@ -6,67 +6,67 @@ import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 
 const { TweenOneGroup } = TweenOne;
-
+const locae = window.Hivelocale.messages
 const featuresCN = [
   {
-    title: '优雅美观',
-    content: '基于 bootstrap5 体系精心设计',
+    title:locae["Page1.box1"][0],
+    content: locae["Page1.box1"][1],
     src: 'https://gw.alipayobjects.com/zos/rmsportal/VriUmzNjDnjoFoFFZvuh.svg',
     color: '#13C2C2',
     shadowColor: 'rgba(19,194,194,.12)',
   },
   {
-    title: '应用模式',
-    content: '转为前端程序员设计，使用JavaScript&Nodejs便可以快速开发属于自己的应用',
+    title: locae["Page1.box2"][0],
+    content: locae["Page1.box2"][1],
     src: 'https://gw.alipayobjects.com/zos/rmsportal/smwQOoxCjXVbNAKMqvWk.svg',
     color: '#2F54EB',
     shadowColor: 'rgba(47,84,235,.12)',
   },
   {
-    title: '最新技术栈',
-    content: '使用 Electron&Chromium 108等前端前沿技术开发',
+    title: locae["Page1.box3"][0],
+    content: locae["Page1.box3"][1],
     src: 'https://gw.alipayobjects.com/zos/rmsportal/hBbIHzUsSbSxrhoRFYzi.svg',
     color: '#F5222D',
     shadowColor: 'rgba(245,34,45,.12)',
   },
   {
-    title: '响应式',
-    content: '针对不同屏幕大小设计，自由拉伸窗口大小',
+    title: locae["Page1.box4"][0],
+    content: locae["Page1.box4"][1],
     src: 'https://gw.alipayobjects.com/zos/rmsportal/BISfzKcCNCYFmTYcUygW.svg',
     color: '#1AC44D',
     shadowColor: 'rgba(26,196,77,.12)',
   },
   {
-    title: '主题',
-    content: '拥有浅色与深色主题切换功能',
+    title:locae["Page1.box5"][0],
+    content: locae["Page1.box5"][1],
     src: 'https://gw.alipayobjects.com/zos/rmsportal/XxqEexmShHOofjMYOCHi.svg',
     color: '#FAAD14',
     shadowColor: 'rgba(250,173,20,.12)',
   },
   {
-    title: '标准化Api',
-    content: '内部Api与参数名统一，减少您的代码量',
+    title: locae["Page1.box6"][0],
+    content: locae["Page1.box6"][1],
     src: 'https://gw.alipayobjects.com/zos/rmsportal/JsixxWSViARJnQbAAPkI.svg',
     color: '#722ED1',
     shadowColor: 'rgba(114,46,209,.12)',
   },
   {
-    title: '最佳实践',
-    content: '社区持续发布开源应用供您参考',
+    title:locae["Page1.box7"][0],
+    content: locae["Page1.box7"][1],
     src: 'https://gw.alipayobjects.com/zos/rmsportal/pbmKMSFpLurLALLNliUQ.svg',
     color: '#FA8C16',
     shadowColor: 'rgba(250,140,22,.12)',
   },
   {
-    title: '安全数据',
-    content: '使用RSA加UUID绑定计算机对数据进行非对称加密',
+    title: locae["Page1.box8"][0],
+    content: locae["Page1.box8"][1],
     src: 'https://gw.alipayobjects.com/zos/rmsportal/aLQyKyUyssIUhHTZqCIb.svg',
     color: '#EB2F96',
     shadowColor: 'rgba(235,45,150,.12)',
   },
   {
-    title: '自由控制权限',
-    content: '不同其它产品权限只能看不能开关，蜂巢可以自由开关每个应用的权限',
+    title: locae["Page1.box9"][0],
+    content:locae["Page1.box9"][1],
     src: 'https://gw.alipayobjects.com/zos/rmsportal/RpJIQitGbSCHwLMimybX.svg',
     color: '#1890FF',
     shadowColor: 'rgba(24,144,255,.12)',
@@ -194,7 +194,7 @@ class Page1 extends React.PureComponent {
             >HiveBot
             </Parallax>
           )}
-          <h2>为什么选择<span>蜂巢</span></h2>
+          <h2>{locae["Page1.h1"]}<span>{locae.hiveName[0]}</span></h2>
           <div className="title-line-wrapper page1-line">
             <div className="title-line" />
           </div>

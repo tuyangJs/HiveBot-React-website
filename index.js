@@ -12,5 +12,5 @@ console.warn("本蜂巢站点使用Ant Design&React UI构建\n项目地址:https
 console.groupEnd()
 console.group("构建信息")
 console.log("最近构建时间：2023年1月7日")
-console.warn("修复移动端整体体验")
+console.warn("增加下载功能，下载所有按钮已可以交互\n1.增加右下角返回顶部按钮 2.顶部导航固定增加动态样式\n修复移动端整体体验")
 console.groupEnd()
