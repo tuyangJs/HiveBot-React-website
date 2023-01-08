@@ -1,8 +1,11 @@
 import cnzh from './zh_CN.json'
-import enGB from './en_GB.json'
+import enGB from './en_US.json'
+import jajp from './ja_JP.json'
 const steb = {
  'zh-CN':cnzh,
- 'en-GB':enGB
+ 'en-US':enGB,
+ 'en-GB':enGB,
+ 'ja-JP':jajp
 }
 
 window.TabHivelad=function(){

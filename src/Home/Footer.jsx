@@ -11,6 +11,9 @@ function Footer(ort) {
       <Menu.Item>
         <a onClick={ort.loacTeab.bind(this,'en-GB')}>English</a>
       </Menu.Item>
+      <Menu.Item>
+        <a onClick={ort.loacTeab.bind(this,'ja-JP')}>にほんご</a>
+      </Menu.Item>
     </Menu>
   )
   return (
