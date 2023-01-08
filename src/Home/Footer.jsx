@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Menu,Dropdown, Col, Button, BackTop } from 'antd';
+import { Row, Menu,Dropdown, Icon,Col, Button, BackTop } from 'antd';
 
 function Footer(ort) {
  
@@ -152,6 +152,7 @@ function Footer(ort) {
             <Dropdown overlay={menu} placement="topCenter">
             <Button ghost size="small" >
               {window.Hivelocale.messages.localesName}
+              <Icon type="up" />
             </Button>
             </Dropdown>
            

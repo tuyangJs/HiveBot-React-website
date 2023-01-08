@@ -58,16 +58,16 @@ class Header extends React.Component {
     );
 
     return (
-    <Affix onChange={affixed => this.henderg(affixed)}>
+    <Affix style={{width:'100% !important'}} onChange={affixed => this.henderg(affixed)}>
       <div id="header" className={this.state.hendergsh}>
         <Row>
-          <Col xxl={4} xl={5} lg={5} md={5} sm={5} xs={5}>
+          <Col xxl={6} xl={6} lg={6} md={5} sm={5} xs={4}>
             <div id="logo" to="/">
               <img src={LOGO_URL} alt="logo" />
               <span>Hive Bot</span>
             </div>
           </Col>
-          <Col offset={0} xxl={19} xl={18} lg={18} md={17} sm={17} xs={17}>
+          <Col  xxl={12} xl={13} lg={15} md={17} sm={17} xs={20}>
             <div className="header-meta">
               {menuMode === 'horizontal' ? <div id="preview"><a
                 id="preview-button"
