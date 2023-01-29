@@ -1,6 +1,7 @@
 {
     "localesName": "English",
     "HiveWebName":"[Preview] Hive - bot Service Platform Robot Framework Solution Platform",
+    "localesmsg":"Your device is in English, to switch languages please slide to the bottom of the page.",
     "hiveName": [
         "Hive",
         "HiveBot"
@@ -77,5 +78,8 @@
         "."
     ],
     "Page2.button": "Download HiveBot",
-    "Page2.buttonT":"Online Installer"
+    "Page2.buttonT":"Online Installer",
+    "Footer.urlname":["Links","Community"],
+    "Footer.url":["API Collective Platform","Free API interface platform","QQ robot, QQ mini-app, QQ mini-game open platform"],
+    "Footer.urlA":["Update Record","QQ group","Online Forum"]
 }

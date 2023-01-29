@@ -7,7 +7,11 @@ function App() {
     <Home />
   );
 }
-ReactDOM.render(<App />, document.getElementById('root'));
+var div = document.createElement("div");
+div.className='Hive-body'
+document.body.appendChild(div)
+ReactDOM.render(<App />, div);
+
 console.warn("本蜂巢站点使用Ant Design&React UI构建\n项目地址:https://github.com/iyuli/HiveBot_-React-website")
 console.groupEnd()
 console.group("构建信息")

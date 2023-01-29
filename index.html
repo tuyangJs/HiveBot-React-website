@@ -1,16 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Demo</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>蜂巢bot - bot服务平台</title>
+  <meta itemprop="name" content="蜂巢Bot，属于前端的机器人框架平台" />
+  <meta name="keywords" content="蜂巢机器人,官方网站/QQ机器人/频道机器人/QQ官方机器人/QQ自动回复消息/插件/机器人网站/酷Q,蜂巢网站">
+  <meta itemprop="description" name="description" content="蜂巢机器人服务平台，开箱即用机器人解决方案框架平台
+一旦你熟悉它后，能够为你节约大量时间，即写即用、不中断，让你可以更加专注、方便地开发。/框架/QQ框架/机器人框架，QQ机器人框架/机器人平台/智能机器人/前端机器人。">
+  <meta id="image" itemprop="image" content="https://sns.hiveai.cc/dist/light-mode.jpg" />
+
+  <style>
+  .load-wrap {
+	width:100%;
+	height:10px;
+	position:absolute;
+	top:0;
+	left:0;
+	background:#ffffff00;
+	z-index:9999;
+}
+#pre-load {
+	position:fixed;
+	top:0;
+	height:2px;
+	background:#007dea;
+	transition:all .8s cubic-bezier(0,0,0,0.66);
+}
+#pre-load span {
+	position:absolute;
+	width:150px;
+	height:2px;
+	-webkit-border-radius:100%;
+	-webkit-box-shadow:#007dea 1px 0 6px 1px;
+	opacity:1;
+	right:-10px;
+	-webkit-animation:pulse 2s ease-out 0s infinite
+}
+@-webkit-keyframes pulse {
+	30% {
+	opacity:.6
+}
+60% {
+	opacity:0
+}
+to {
+	opacity:.6
+}
+} </style>
+
   <link rel="stylesheet" href="dist/index.css" />
   <link rel="stylesheet" href="dist/fonts.css">
 </head>
+<!--  页面由项目直接构建并没有静态HTML
+关注我的Github：https://github.com/iyuli
+我可能会在一段时间后发布官网的React源码项目  -->
+
 <body>
-<script src="dist/common.js"></script>
-<script src="dist/locales.js" ></script>
-<script src="dist/index.js"></script>
+  <script>
+      var _LoadingHtml = '<div class="load-wrap" ><div id="pre-load">' + '<span></span>' + '</div></div>';
+      document.body.innerHTML += _LoadingHtml;
+      const lodad=document.querySelector("#pre-load");const lodbox=document.querySelector("body > div.load-wrap");lodad.style.width='8%';window.onload=function(){lodad.style.width='100%';setTimeout("lodad.style.height=0",1008);setTimeout("lodbox.remove()",2000)};document.onreadystatechange=function(e){if(document.readyState=='complete'){lodad.style.width='96%'}else{lodad.style.width='42%';loddiv()}};function loddiv(){let img=document.querySelector("body > div.Hive-body");let time=setTimeout(()=>{if(img!=null){lodad.style.width='72%';clearTimeout(time)}},10)}
+     </script>
+  <script src="dist/common.js"></script>
+  <script src="dist/locales.js"></script>
+  <script async src="dist/index.js"></script>
 
 </body>
+
 </html>

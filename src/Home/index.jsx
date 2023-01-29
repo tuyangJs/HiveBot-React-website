@@ -14,8 +14,8 @@ let isMobile;
 enquireScreen((b) => {
   isMobile = b;
 })
-if (navigator.language != localStorage.getItem('locales')) {
-  message.warning('检测到您的电脑是中文，如需切换到中文，请在页尾选择语言按钮！', 8)
+if (navigator.language != Hivelocale.locale) {
+  message.warning(Hivelocale.localesmsg, 8)
 }
 class Home extends React.PureComponent {
   state = {
@@ -45,7 +45,6 @@ class Home extends React.PureComponent {
     if (localStorage.getItem('locales') == name) {
       return
     }
-
     localStorage.setItem('locales', name)
     let eer = window.TabHivelad()
     if (eer) {
@@ -57,7 +56,6 @@ class Home extends React.PureComponent {
   render() {
     return (
       <DocumentTitle title={Hivelocale.messages.HiveWebName}>
-
         <div>
           {/*   <Toplod isMobile={this.state.loaval}/> */}
           <Header isMobile={this.state.isMobile} />

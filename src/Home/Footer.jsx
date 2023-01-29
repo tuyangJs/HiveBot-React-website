@@ -2,17 +2,17 @@ import React from 'react';
 import { Row, Menu,Dropdown, Icon,Col, Button, BackTop } from 'antd';
 
 function Footer(ort) {
- 
+ const load = window.Hivelocale.messages
    const menu = (
     <Menu>
       <Menu.Item>
-        <a onClick={ort.loacTeab.bind(this,'zh-CN')}>简体中文</a>
+        <a onClick={ort.loacTeab.bind(this,'zh-CN')}>简体中文 🇨🇳</a>
       </Menu.Item>
       <Menu.Item>
-        <a onClick={ort.loacTeab.bind(this,'en-GB')}>English</a>
+        <a onClick={ort.loacTeab.bind(this,'en-US')}>English 🇺🇸</a>
       </Menu.Item>
       <Menu.Item>
-        <a onClick={ort.loacTeab.bind(this,'ja-JP')}>にほんご</a>
+        <a onClick={ort.loacTeab.bind(this,'ja-JP')}>にほんご 🇯🇵</a>
       </Menu.Item>
     </Menu>
   )
@@ -20,11 +20,11 @@ function Footer(ort) {
     <footer id="footer" className="dark">
       <div>
         <BackTop />
-        <strong style={{ color: 'rgba(64, 64, 64, 0.6)' }}> </strong>
+        <strong style={{ color: 'rgba(64, 64, 64, 0.6)',right:'20px'}}> </strong>
       </div>
-      {/*   <div className="footer-wrap">
+        <div className="footer-wrap">
         <Row>
-          <Col lg={6} sm={24} xs={24}>
+  {/*         <Col lg={6} sm={24} xs={24}>
             <div className="footer-center">
               <h2>Ant Design</h2>
               <div>
@@ -51,77 +51,48 @@ function Footer(ort) {
                 </a>
               </div>
             </div>
-          </Col>
-          <Col lg={6} sm={24} xs={24}>
+          </Col> */}
+          <Col lg={12} sm={24} xs={24}>
             <div className="footer-center">
-              <h2>Ant Design</h2>
+              <h2>{load["Footer.urlname"][0]}</h2>
               <div>
-                <a href="http://scaffold.ant.design">Scaffolds</a>
+                <a target="_blank"  href="https://api.wer.plus/">一铭API</a>
                 <span> - </span>
-                <span>脚手架市场</span>
+                <span>{load["Footer.url"][0]}</span>
               </div>
               <div>
-                <a target="_blank" rel="noopener" href="http://motion.ant.design">Ant Motion</a>
+                <a target="_blank" rel="noopener" href="https://api.lovewei.top/">维梦API</a>
                 <span> - </span>
-                <span>设计动效</span>
+                <span>{load["Footer.url"][1]}</span>
               </div>
               <div>
-                <a target="_blank" rel="noopener" href="http://library.ant.design/">Axure Library</a>
+                <a target="_blank" rel="noopener" href="https://q.qq.com/">QQ开放平台</a>
                 <span> - </span>
-                <span>Axure 部件库</span>
-              </div>
-              <div>
-                <a target="_blank" rel="noopener" href="http://ux.ant.design">Ant UX</a>
-                <span> - </span>
-                <span>页面逻辑素材</span>
-              </div>
-              <div>
-                <a target="_blank" rel="noopener" href="https://github.com/dvajs/dva">dva </a>
-                <span> - </span>
-                <span> 应用框架</span>
-              </div>
-              <div>
-                <a target="_blank" rel="noopener" href="https://github.com/dvajs/dva-cli">dva-cli </a>
-                <span> - </span>
-                <span> 开发工具</span>
+                <span>{load["Footer.url"][2]}</span>
               </div>
             </div>
           </Col>
-          <Col lg={6} sm={24} xs={24}>
+          <Col lg={12} sm={24} xs={24}>
             <div className="footer-center">
-              <h2>社区</h2>
+              <h2>{load["Footer.urlname"][1]}</h2>
               <div>
-                <a href="#">
-                  更新记录
+                <a target="_blank" href="https://com.hiveai.cc/cate/5/seq/0">
+                {load["Footer.urlA"][0]}
                 </a>
               </div>
               <div>
-                <a href="#">
-                  常见问题
+                <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=4YaUlGuA">
+                {load["Footer.urlA"][1]}
                 </a>
               </div>
               <div>
-                <a target="_blank" rel="noopener" href="https://gitter.im/ant-design/ant-design-pro">
-                  在线讨论
-                </a>
-              </div>
-              <div>
-                <a target="_blank" rel="noopener" href="https://github.com/ant-design/ant-design-pro/issues">
-                  讨论列表
-                </a>
-              </div>
-              <div>
-                <a
-                  target="_blank"
-                  rel="noopener"
-                  href="http://ant.design/docs/resource/work-with-us"
-                >
-                  加入我们
+                <a target="_blank" rel="noopener" href="https://com.hiveai.cc/">
+                {load["Footer.urlA"][2]}
                 </a>
               </div>
             </div>
           </Col>
-          <Col lg={6} sm={24} xs={24}>
+         {/*  <Col lg={6} sm={24} xs={24}>
             <div className="footer-center">
               <h2>
                 更多产品
@@ -142,9 +113,9 @@ function Footer(ort) {
                 <span>企业级 Node Web 开发框架</span>
               </div>
             </div>
-          </Col>
+          </Col> */}
         </Row>
-      </div> */}
+      </div>
 
       <Row className="bottom-bar">
         <Col lg={6} sm={24}>

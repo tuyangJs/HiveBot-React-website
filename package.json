@@ -2,7 +2,7 @@
   "private": true,
   "entry": {
     "index": "./index.js",
-    "locales":"./locales/index.js"
+    "locales": "./locales/index.js"
   },
   "dependencies": {
     "antd": "^2.13.10",
@@ -17,9 +17,7 @@
     "react-document-title": "^2.0.3",
     "react-dom": "^16.1.1",
     "react-github-button": "^0.1.11",
-    "save-dev": "^0.0.1-security",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1"
+    "save-dev": "^0.0.1-security"
   },
   "devDependencies": {
     "atool-build": "^1.0.2",
@@ -38,7 +36,9 @@
     "expect": "^21.2.1",
     "gh-pages": "^1.1.0",
     "pre-commit": "^1.2.2",
-    "redbox-react": "^1.5.0"
+    "redbox-react": "^1.5.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   },
   "pre-commit": [
     "lint"

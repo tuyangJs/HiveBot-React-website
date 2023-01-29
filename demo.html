@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+</head>
+
+<body>
+
+</body>
+<script src="https://wx.gtimg.com/wxpay_h5/fingerprint2.min.1.5.1.js"></script>
+<script>
+    var H = document.createElement("H3");
+    const fp = new Fingerprint2();
+    fp.get(function (result) {
+        H.textContent = result
+        document.body.appendChild(H)
+    });
+
+</script>
+
+</html>
