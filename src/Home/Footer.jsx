@@ -52,7 +52,7 @@ function Footer(ort) {
               </div>
             </div>
           </Col> */}
-          <Col lg={12} sm={24} xs={24}>
+          <Col lg={12} sm={12} xs={24}>
             <div className="footer-center">
               <h2>{load["Footer.urlname"][0]}</h2>
               <div>
@@ -72,7 +72,7 @@ function Footer(ort) {
               </div>
             </div>
           </Col>
-          <Col lg={12} sm={24} xs={24}>
+          <Col lg={12} sm={12} xs={24}>
             <div className="footer-center">
               <h2>{load["Footer.urlname"][1]}</h2>
               <div>
@@ -130,7 +130,7 @@ function Footer(ort) {
           </div>
         </Col>
         <Col lg={18} sm={24}>
-          {/*   <span
+            <span
             style={{
               lineHeight: '16px',
               paddingRight: 12,
@@ -139,25 +139,25 @@ function Footer(ort) {
             }}
           >
             <a
-              href="https://docs.alipay.com/policies/privacy/antfin"
+              href="https://beian.miit.gov.cn/#/Integrated/index"
               rel="noopener noreferrer"
               target="_blank"
             >
-              隐私权政策 ICP
+              蜀ICP备2022000695号-1
             </a>
           </span>
           <span style={{ marginRight: 24 }}>
+          增值电信业务经营许可证：
             <a
-              href="https://render.alipay.com/p/f/fd-izto3cem/index.html"
+              href="https://tsm.miit.gov.cn/#/home"
               rel="noopener noreferrer"
               target="_blank"
             >
-              权益保障承诺书
+              川B2-20230159
             </a>
-          </span> */}
-          <span style={{ marginRight: 12 }}>蜀ICP备2022000695号-1</span>
+          </span>
         </Col>
-        <span style={{ marginRight: 12 }}>Copyright © HiveBot</span>
+        <span style={{ marginRight: 12 }}>Copyright © 四川镜芯网络科技有限公司</span>
 
       </Row>
     </footer>
