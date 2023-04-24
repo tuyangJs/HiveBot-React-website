@@ -51,8 +51,8 @@ to {
 }
 } </style>
 
-  <link rel="stylesheet" href="/index.css" />
-  <link rel="stylesheet" href="/fonts.css">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="fonts.css">
 </head>
 <!--  页面由项目直接构建并没有静态HTML
 关注我的Github：https://github.com/iyuli
@@ -64,9 +64,9 @@ to {
       document.body.innerHTML += _LoadingHtml;
       const lodad=document.querySelector("#pre-load");const lodbox=document.querySelector("body > div.load-wrap");lodad.style.width='8%';window.onload=function(){lodad.style.width='100%';setTimeout("lodad.style.height=0",1008);setTimeout("lodbox.remove()",2000)};document.onreadystatechange=function(e){if(document.readyState=='complete'){lodad.style.width='96%'}else{lodad.style.width='42%';loddiv()}};function loddiv(){let img=document.querySelector("body > div.Hive-body");let time=setTimeout(()=>{if(img!=null){lodad.style.width='72%';clearTimeout(time)}},10)}
      </script>
-  <script src="/common.js"></script>
-  <script src="/locales.js"></script>
-  <script async src="/index.js"></script>
+  <script src="common.js"></script>
+  <script src="locales.js"></script>
+  <script async src="index.js"></script>
 
 </body>
 

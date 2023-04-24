@@ -1,18 +1,18 @@
 import React from 'react';
-import { Row, Menu,Dropdown, Icon,Col, Button, BackTop } from 'antd';
+import { Row, Menu, Dropdown, Icon, Col, Button, BackTop } from 'antd';
 
 function Footer(ort) {
- const load = window.Hivelocale.messages
-   const menu = (
+  const load = window.Hivelocale.messages
+  const menu = (
     <Menu>
       <Menu.Item>
-        <a onClick={ort.loacTeab.bind(this,'zh-CN')}>简体中文 🇨🇳</a>
+        <a onClick={ort.loacTeab.bind(this, 'zh-CN')}>简体中文 🇨🇳</a>
       </Menu.Item>
       <Menu.Item>
-        <a onClick={ort.loacTeab.bind(this,'en-US')}>English 🇺🇸</a>
+        <a onClick={ort.loacTeab.bind(this, 'en-US')}>English 🇺🇸</a>
       </Menu.Item>
       <Menu.Item>
-        <a onClick={ort.loacTeab.bind(this,'ja-JP')}>にほんご 🇯🇵</a>
+        <a onClick={ort.loacTeab.bind(this, 'ja-JP')}>にほんご 🇯🇵</a>
       </Menu.Item>
     </Menu>
   )
@@ -20,11 +20,11 @@ function Footer(ort) {
     <footer id="footer" className="dark">
       <div>
         <BackTop />
-        <strong style={{ color: 'rgba(64, 64, 64, 0.6)',right:'20px'}}> </strong>
+        <strong style={{ color: 'rgba(64, 64, 64, 0.6)', right: '20px' }}> </strong>
       </div>
-        <div className="footer-wrap">
+      <div className="footer-wrap">
         <Row>
-  {/*         <Col lg={6} sm={24} xs={24}>
+          {/*         <Col lg={6} sm={24} xs={24}>
             <div className="footer-center">
               <h2>Ant Design</h2>
               <div>
@@ -56,7 +56,7 @@ function Footer(ort) {
             <div className="footer-center">
               <h2>{load["Footer.urlname"][0]}</h2>
               <div>
-                <a target="_blank"  href="https://api.wer.plus/">一铭API</a>
+                <a target="_blank" href="https://api.wer.plus/">一铭API</a>
                 <span> - </span>
                 <span>{load["Footer.url"][0]}</span>
               </div>
@@ -77,22 +77,22 @@ function Footer(ort) {
               <h2>{load["Footer.urlname"][1]}</h2>
               <div>
                 <a target="_blank" href="https://com.hiveai.cc/cate/5/seq/0">
-                {load["Footer.urlA"][0]}
+                  {load["Footer.urlA"][0]}
                 </a>
               </div>
               <div>
                 <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=4YaUlGuA">
-                {load["Footer.urlA"][1]}
+                  {load["Footer.urlA"][1]}
                 </a>
               </div>
               <div>
                 <a target="_blank" rel="noopener" href="https://com.hiveai.cc/">
-                {load["Footer.urlA"][2]}
+                  {load["Footer.urlA"][2]}
                 </a>
               </div>
             </div>
           </Col>
-         {/*  <Col lg={6} sm={24} xs={24}>
+          {/*  <Col lg={6} sm={24} xs={24}>
             <div className="footer-center">
               <h2>
                 更多产品
@@ -121,16 +121,16 @@ function Footer(ort) {
         <Col lg={6} sm={24}>
           <div className="translate-button">
             <Dropdown overlay={menu} placement="topCenter">
-            <Button ghost size="small" >
-              {window.Hivelocale.messages.localesName}
-              <Icon type="up" />
-            </Button>
+              <Button ghost size="small" >
+                {window.Hivelocale.messages.localesName}
+                <Icon type="up" />
+              </Button>
             </Dropdown>
-           
+
           </div>
         </Col>
         <Col lg={18} sm={24}>
-            <span
+          <span
             style={{
               lineHeight: '16px',
               paddingRight: 12,
@@ -147,13 +147,9 @@ function Footer(ort) {
             </a>
           </span>
           <span style={{ marginRight: 24 }}>
-          增值电信业务经营许可证：
-            <a
-              href="https://tsm.miit.gov.cn/#/home"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              川B2-20230159
+          川公网安备：
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51019002005439">
+              51019002005439号
             </a>
           </span>
         </Col>

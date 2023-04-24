@@ -17,6 +17,7 @@
     "react-document-title": "^2.0.3",
     "react-dom": "^16.1.1",
     "react-github-button": "^0.1.11",
+    "request": "^2.88.2",
     "save-dev": "^0.0.1-security"
   },
   "devDependencies": {
